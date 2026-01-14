@@ -4,18 +4,20 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "lint" : "eslint",
+    "lint": "eslint",
+    "format": "prettier --write \"{domain, test}/**/*.{ts,tsx,js,jsx,json,css,md,mdx}\"",
     "test": "vitest"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "eslint": "^9.39.2",
+    "eslint-plugin-unicorn": "^62.0.0",
+    "prettier": "^3.7.4"
   },
   "peerDependencies": {
     "typescript": "^5"
   },
   "dependencies": {
-    "eslint": "^9.39.2",
-    "eslint-plugin-unicorn": "^62.0.0",
     "fp-ts": "^2.16.11",
     "ts-pattern": "^5.9.0",
     "vitest": "^4.0.17"
