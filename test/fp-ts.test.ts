@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { type Option, none, some, fromNullable } from 'fp-ts/Option';
 import { type Either, tryCatch } from 'fp-ts/Either';
 import * as E from 'fp-ts/Either';
-import { IO } from 'fp-ts/IO';
+import type { IO } from 'fp-ts/IO';
 
 describe('Eq', () => {
   it('Option', () => {
